@@ -1,8 +1,8 @@
+{ "codes":
 [
     {
         "id": "001",
         "drugName": "Gonal F",
-        "category": "FSH",
         "strength": "900",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -13,7 +13,6 @@
     {
         "id": "002",
         "drugName": "Gonal F",
-        "category": "FSH",
         "strength": "450",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -24,7 +23,6 @@
     {
         "id": "003",
         "drugName": "Gonal F",
-        "category": "FSH",
         "strength": "300",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -35,7 +33,6 @@
     {
         "id": "004",
         "drugName": "Puregon",
-        "category": "FSH",
         "strength": "900",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -56,7 +53,6 @@
     {
         "id": "006",
         "drugName": "Puregon",
-        "category": "FSH",
         "strength": "300",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -67,7 +63,6 @@
     {
         "id": "007",
         "drugName": "Orgalutran",
-        "category": "Antagonist",
         "strength": "",
         "pbsCode": "1234A",
         "streamline": "9876Y",
@@ -75,4 +70,4 @@
         "Repeats": "0",
         "Criteria": "This is some text about the drug requirements."
 }
-]
+]}

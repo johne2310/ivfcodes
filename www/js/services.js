@@ -1,48 +1,16 @@
 angular.module('ivfCodes.services', [])
 
-.factory('CodeStore', function () {
+.factory('CodeStore', function ($http) {
 
-
-
-    //Mock data
-    var codes = [
-        {
-            "id": "001",
-            "drugName": "Gonal F",
-            "strength": "900",
-            "pbsCode": "1234A",
-            "streamline": "9876Y",
-            "Qty": "5",
-            "Repeats": "0",
-            "Criteria": "This is some text about the drug requirements."
-},
-        {
-            "id": "002",
-            "drugName": "Gonal F",
-            "strength": "450",
-            "pbsCode": "1234A",
-            "streamline": "9876Y",
-            "Qty": "5",
-            "Repeats": "0",
-            "Criteria": "This is some text about the drug requirements."
-},
-        {
-            "id": "003",
-            "drugName": "Gonal F",
-            "strength": "300",
-            "pbsCode": "1234A",
-            "streamline": "9876Y",
-            "Qty": "5",
-            "Repeats": "0",
-            "Criteria": "This is some text about the drug requirements."
-}
-    ];
-
-
+    var codes = [];
     return {
 
-        list: function () {
-            return codes;
+        getCodes: function () {
+            return $http.get("js/data.json").then(function (response) {
+                codes = response.data;
+                console.log(codes);
+                return codes;
+            });
         },
 
         get: function (codeId) {
@@ -56,23 +24,4 @@ angular.module('ivfCodes.services', [])
         }
     };
 
-
-
-    //
-    //    return {
-    //        all: function () {
-    //            return codes;
-    //        },
-    //        remove: function (codes) {
-    //            codes.splice(codes.indexOf(codes), 1);
-    //        },
-    //        get: function (codesId) {
-    //            for (var i = 0; i < codes.length; i++) {
-    //                if (codes[i].id === parseInt(codesId)) {
-    //                    return codes[i];
-    //                }
-    //            }
-    //            return null;
-    //        }
-    //    };
 });

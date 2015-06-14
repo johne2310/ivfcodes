@@ -28,11 +28,55 @@ ivfCodes.controller('HomeCtrl', function ($scope) {});
 //    }
 //  ]);
 
-ivfCodes.controller('codesCtrl', function ($scope, CodeStore) {
+ivfCodes.controller('codesCtrl', function ($q, $scope, $state, CodeStore) {
+    CodeStore.getCodes().then(function (data) {
+        $scope.codes = data;
+        console.log($scope.codes);
+    });
 
-    $scope.codes = CodeStore.list();
+    $scope.clearSearch = function () {
+        $scope.query = null;
+    };
+    $scope.findAgonist = function () {
+        $scope.query = null;
+        $scope.query = 'Agonist';
+    };
+    $scope.findAntag = function () {
+        $scope.query = null;
+        $scope.query = 'Antagonist';
+    };
+    $scope.findTrigger = function () {
+        $scope.query = null;
+        $scope.query = 'Trigger';
+    };
+    $scope.findLuteal = function () {
+        $scope.query = null;
+        $scope.query = 'Luteal';
+    };
+    $scope.findOther = function () {
+        $scope.query = null;
+        $scope.query = 'Other';
+    };
+    $scope.findFSH = function () {
+        $scope.query = null;
+        $scope.query = 'FSH';
 
+    };
 });
+
+///test data
+//.controller('masterCtrl', function ($q, $scope, RequestService) {
+//    RequestService.getRequests().then(function (data) {
+//        $scope.requests = data;
+//        console.log($scope.requests);
+//    })
+//})
+
+///end of test
+
+
+
+
 
 ivfCodes.controller('DetailCtrl', function ($scope, $state, CodeStore) {
 

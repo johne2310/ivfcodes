@@ -1,4 +1,12 @@
 {
   "name": "ivfCodes",
-  "app_id": "2c9d3a6d"
+  "app_id": "2c9d3a6d",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
