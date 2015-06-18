@@ -1,21 +1,36 @@
 <ion-view view-title="PBS Details">
     <ion-content class="padding">
-        <div class="list list-inset">
-            <div class="item item-divider item-dark">
-                <b>{{ code.drugName}} {{code.strength}}</b>
+        <div class="item item-divider item-dark">
+            <b>{{ code.Brand}} {{code.Strength}}</b>
+        </div>
+        <div class="pbs item item-text-wrap">
+            <div class="row">
+                <div class="col col-33"><b>Streamline Authority Code</b>:</div>
+                <div class="col" style="color:Red"><b>{{ code.streamlineCode }}</b>
+                </div>
             </div>
-            <div class="item item-text-wrap">
-                <b>Streamline Authority Code</b>: {{ code.streamline }}
-                <br>
-                <b>PBS Code</b>: {{ code.pbsCode}}
-                <br>
-                <b>Max. Qty</b>: {{ code.Qty}}
-                <br>
-                <b>Max. Repeats</b>: {{ code.Repeats}}
-                <br>
-                <b>PBS Criteria</b>: {{ code.Criteria}}
+            <div class="row">
+                <div class="col col-33"><b>Max PBS Qty</b>:
+                    <br><b>(in Packs)</b> </div>
+                <div class="col">{{ code.Quantity }}</div>
             </div>
-
+            <div class="row">
+                <div class="col col-33"><b>Pack Size</b>:
+                </div>
+                <div class="col">{{ code.packSize }} x {{code.Form}} </div>
+            </div>
+            <div class="row">
+                <div class="col col-33"><b>Drug Name</b>: </div>
+                <div class="col capitalize">{{ code.Drug }}</div>
+            </div>
+            <div class="row">
+                <div class="col col-33"><b>PBS Code</b>: </div>
+                <div class="col">{{ code.pbsCode }}</div>
+            </div>
+            <div class="row">
+                <div class="col col-33"><b>PBS Criteria</b>: </div>
+                <div class="col">{{ code.Criteria }}</div>
+            </div>
         </div>
     </ion-content>
 </ion-view>

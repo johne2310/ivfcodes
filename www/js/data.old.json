@@ -1,0 +1,79 @@
+[
+    {
+        "id": "001",
+        "drugName": "Gonal F",
+        "category": "FSH",
+        "strength": "900",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "002",
+        "drugName": "Gonal F",
+        "category": "FSH",
+        "strength": "450",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "003",
+        "drugName": "Gonal F",
+        "category": "FSH",
+        "strength": "300",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "004",
+        "drugName": "Puregon",
+        "category": "FSH",
+        "strength": "900",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "005",
+        "drugName": "Puregon",
+        "category": "FSH",
+        "strength": "600",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "006",
+        "drugName": "Puregon",
+        "category": "FSH",
+        "strength": "300",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+},
+    {
+        "id": "007",
+        "drugName": "Orgalutran",
+        "category": "Antag.",
+        "strength": "25",
+        "pbsCode": "1234A",
+        "streamline": "9876Y",
+        "Qty": "5",
+        "Repeats": "0",
+        "Criteria": "This is some text about the drug requirements."
+}
+]

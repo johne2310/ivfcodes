@@ -8,7 +8,6 @@ angular.module('ivfCodes.services', [])
         getCodes: function () {
             return $http.get("js/data.json").then(function (response) {
                 codes = response.data;
-                console.log(codes);
                 return codes;
             });
         },
@@ -23,5 +22,4 @@ angular.module('ivfCodes.services', [])
             return undefined;
         }
     };
-
 });

@@ -21,3 +21,15 @@ $button-border-radius: 3px !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+//Correct subheader spacing issues
+.platform-android .bar-subheader.has-tabs-top {
+    top: 93px !important;
+}
+
+.platform-android .has-subheader.has-tabs-top {
+    top: 137px;
+}
+
+div.capitalize {
+    text-transform: capitalize;
+}

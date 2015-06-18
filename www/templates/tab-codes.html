@@ -11,20 +11,21 @@
 
     <!--   start content-->
     <ion-content class="has-subheader padding">
-        <div class="button-bar button-outline button-positive">
+        <div class="button-bar button-outline button-positive padding-bottom">
             <a class="button button-outline button-positive" on-touch="findFSH()">FSH</a>
             <a class="button button-outline button-positive" on-touch="findAgonist()">Agonist</a>
             <a class="button button-outline button-positive" on-touch="findAntag()">Antagonist</a>
         </div>
-        <div class="button-bar button-outline button-positive">
+        <div class="button-bar button-outline button-positive padding-bottom">
 
             <a class="button button-outline button-positive" on-touch="findTrigger()">Trigger</a>
             <a class="button button-outline button-positive" on-touch="findLuteal()">Luteal</a>
             <a class="button button-outline button-positive" on-touch="findOther()">Other</a>
         </div>
         <ion-list>
-            <ion-item class="item-remove-animate item-icon-right" ng-repeat="code in codes | filter: query: true" type="item-text-wrap" href="#/tab/codes/{{code.id}}">
-                <h2>{{ code.drugName }} {{ code.strength }}</h2>
+            <ion-item class="item-remove-animate item-icon-right item-text-wrap" ng-repeat="code in codes | filter: query" type="item-text-wrap" ng-href="#/tab/codes/{{code.id}}">
+                <h2>{{ code.Brand }} {{ code.Strength }}</h2> <span ng-if="code.packSize > 1" class="item-note">Pack size: {{ code.packSize }}</span>
+                <p>({{ code.Drug}})</p>
                 <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
         </ion-list>
